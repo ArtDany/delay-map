@@ -1,0 +1,19 @@
+.quest {
+    display: inline-block;
+    color: purple;
+}
+
+.quest:hover {
+    cursor: pointer;
+    animation: fall-rotate 2s ease-in-out forwards;
+}
+
+@keyframes fall-rotate {
+    0% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0%, 150%) rotate(30deg);
+    }
+}
